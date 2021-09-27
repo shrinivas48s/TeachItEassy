@@ -1,0 +1,185 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 550px;
+  margin-top: 50px;
+  
+  
+}
+
+
+.containers_list{
+  color: #404040;
+  display: block;
+  padding: 22px 40px 24px 24px;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+  text-decoration: none;
+  border: 1px solid black;
+  max-width:800px ;
+  border-radius: 20px;
+ 
+  
+}
+.upper{
+  align-items: flex-start;
+    display: flex;
+    margin-left: -10px;
+ 
+  
+}
+.image{
+  border-radius: 50%;
+  display: block;
+  height: 160px;
+  width: 160px;
+  margin-right: 22px;
+  overflow: hidden;
+ 
+  background-position: center;
+  background-size: cover;
+
+}
+
+.user_name{
+  flex: 1;
+  
+}
+div.containers_list h2{
+  font-size: 26px;
+    margin-bottom: 12px;
+    text-transform: none;
+}
+
+.name{
+  margin-bottom: 5px;
+}
+.rating{
+  margin-bottom: 0;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+
+.field{
+  margin: 5px;
+}
+
+.price{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+}
+
+.assured{
+  display: flex;
+  border: 1px solid black;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgb(214, 214, 228);
+  background-color: blue;
+  width: 150px;
+ 
+ 
+}
+
+.assured i p{
+ margin: 8px
+
+}
+
+.loction{
+  border-left: 1px solid #eaeaea;
+    min-height: 110px;
+    min-width: 160px;
+    padding-left: 27px;
+    margin-left: 100px;
+    font-size: 1.5rem;
+  
+}
+.teacher_location{
+  align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.teacher_location i{
+  
+  margin-right: 10px;
+  text-align: center;
+  width: 18px;
+}
+
+
+.bottom{
+
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Result-Description {
+  flex: 1;
+  font-size: var(--font-size-body);
+  padding-right: 40px;
+}
+
+
+.Result{
+  background: none;
+    border-radius: 25px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: var(--font-family-muli);
+    font-size: var(--font-size-cta);
+    font-weight: 600;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    outline: none;
+    padding: 0 28px;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    transition: background-color 0.2s, opacity 0.2s;
+    white-space: nowrap;
+    background-color: blue;
+    color: white;
+}
+.PillButton .Fontello{
+  margin-left: 10px;
+}
+.Fontello:before {
+  content: '\e85c';
+}
+.Fontello::before{
+  font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+  
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    /* font-size: 120%; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* text-shadow: 1px 1px 1px rgb(127 127 127 / 30%); */
+
+}

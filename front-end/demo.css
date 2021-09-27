@@ -1,0 +1,383 @@
+.BookContact_FormHolder {
+    align-items: center;
+    background: var(--color-takelessons-blue);
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    justify-content: center;
+    min-height: calc(100vh - 60px);
+}
+
+
+.BookContact_FormImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.BookContact, .BookLogin {
+    background: #fff;
+    box-sizing: border-box;
+    color: #111;
+    font-family: var(--font-family-muli);
+    font-size: 13px;
+    max-width: 526px;
+    padding: 40px 67px 32px 67px;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+.BookContact_Cancel {
+    cursor: pointer;
+    opacity: .8;
+    padding: 10px;
+    position: absolute;
+    top: -6px;
+    left: 100%;
+    transition: 0.2s opacity;
+}
+.BookContact_Cancel img {
+    display: block;
+    height: 13px;
+    width: 14px;
+}
+.BookContact_Cancel img:last-child {
+    display: none;
+}
+
+.BookLogin h1, .BookContact h1 {
+    color: #111;
+    font-family: var(--font-family-muli);
+    font-size: 26px;
+    line-height: 1.5;
+    margin: 0 auto 3px auto;
+    max-width: 340px;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, .PrimaryFont {
+    font-family: var(--font-family-body);
+    line-height: 1.3;
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+h1, h2.Large, h3.ExtraLarge {
+    font-size: 2.5em;
+}
+
+.BookContact p {
+    color: #111;
+    font-size: 16px;
+    margin: 0 10px 26px 10px;
+    text-align: center;
+}
+.BookContact_Row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.BookLogin label, .BookContact label {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.BookContact_Row>*:first-child {
+    flex: 1;
+}
+.BookContact_FormHolder .StyledInput, .BookContact_FormHolder input.StyledInput, .BookContact_FormHolder select.StyledInput {
+    font-size: 13px;
+}
+.BookLogin label input, .BookContact label input, .BookContact label select {
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-width: 0;
+}
+.StyledInput, input.StyledInput, select.StyledInput {
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+
+.BookContact_Row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.BookLogin label, .BookContact label {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+.BookContact_FormHolder .StyledInput, .BookContact_FormHolder input.StyledInput, .BookContact_FormHolder select.StyledInput {
+    font-size: 13px;
+}
+
+.BookLogin label input, .BookContact label input, .BookContact label select {
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-width: 0;
+}
+.StyledInput, input.StyledInput, select.StyledInput {
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+
+
+
+.BookContact_Row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+.BookLogin label, .BookContact label {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.BookContact_FormHolder .StyledInput, .BookContact_FormHolder input.StyledInput, .BookContact_FormHolder select.StyledInput {
+    font-size: 13px;
+}
+.BookLogin label input, .BookContact label input, .BookContact label select {
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-width: 0;
+}
+.StyledInput, input.StyledInput, select.StyledInput {
+    background: #fff;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+
+.BookContact_Row>*:nth-child(2) {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.BookLogin label, .BookContact label {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.BookLogin label input, .BookContact label input, .BookContact label select {
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-width: 0;
+}
+input, select, textarea {
+    font-family: var(--font-family-muli);
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], textarea, select {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #777;
+    font-size: 13.3333px;
+    display: block;
+    font-family: var(--font-family-body);
+    margin: 0;
+    margin-bottom: 10px;
+    max-width: 100%;
+    outline: none;
+    padding: 6px 4px;
+}
+user agent stylesheet
+select:not(:-internal-list-box) {
+    background-color: buttonface;
+    overflow: visible !important;
+}
+user agent stylesheet
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+
+
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PillButton.Blue, button.PillButton.Blue, a.PillButton.Blue {
+    background-color: #444;
+    color: #fff;
+}
+
+.BookLogin button, .BookContact button {
+    display: block;
+    margin: 40px auto 0 auto;
+    min-width: 260px;
+}
+.PillButton, input.PillButton, button.PillButton, a.PillButton {
+    background: none;
+    border-radius: 25px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: var(--font-family-muli);
+    font-size: var(--font-size-cta);
+    font-weight: 600;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    outline: none;
+    padding: 0 28px;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    transition: background-color 0.2s,opacity 0.2s;
+    white-space: nowrap;
+}
+
+
+.PillButton .Fontello-right-open-big {
+    margin-left: 10px;
+}
+
+
+
+.Fontello-right-open-big:before {
+    content: '\e85c';
+}
+
+.Fontello:before  {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.BookContact_Disclaimer {
+    color: #404040;
+    font-size: 12px;
+    max-width: 280px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.BookContact_FormHolder a {
+    color: var(--color-takelessons-blue);
+    text-decoration: underline;
+}
+
+.BookContact_Returning {
+    color: #404040;
+    font-size: 12px;
+    margin-top: 32px;
+    text-align: center;
+}
+.BookContact_Returning span {
+    cursor: pointer;
+    color: var(--color-takelessons-blue);
+    text-decoration: underline;
+}

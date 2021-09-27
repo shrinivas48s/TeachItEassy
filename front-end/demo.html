@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    
+
+
+    <header> <nav>
+        <a class="logo" href="/">
+         <img src="3.png" alt="">
+        </a>
+   
+     <ul class="nav-links">
+       <li><a href="browse.html">Browse</a></li>
+       <li><a href="sign_up.html">Mentor</a></li>
+       <li><a href="">Teacher</a></li>
+       <li><a href="">About Us</a></li>
+     </ul>
+   
+   <div class="mob">
+     <div class="line1"></div>
+     <div class="line2"></div>
+     <div class="line3"></div>
+   </div>
+  </nav>
+    <script src="home.js"></script>
+    </header>
+
+
+    <div class="BookContact_FormHolder">
+        <img class="BookContact_FormImage" src="https://prod-takelessons.netdna-ssl.com/images/public/checkout/bg-contact-info.jpg">
+    
+        <!-- ngIf: view.form == 'login' -->
+        <!-- ngIf: view.form != 'login' --><form ng-if="view.form != 'login'" ng-submit="view.submit()" class="BookContact ng-pristine ng-valid ng-scope ng-valid-email">
+          <div onclick="window.history.back();" class="BookContact_Cancel">
+            <img src="https://prod-takelessons.netdna-ssl.com/images/public/icon/icon-close-light.png">
+            <img src="https://prod-takelessons.netdna-ssl.com/images/public/icon/icon-close-dark.png">
+          </div>
+    
+          <!-- ngIf: view.hasAccount -->
+          <!-- ngIf: !view.hasAccount --><div ng-if="!view.hasAccount" class="ng-scope">
+            <h1>You're Almost There!</h1>
+    
+            <p>
+              You are one step closer to subject mastery!
+              Tell us about yourself, and we’ll match you with the perfect lessons for your lifestyle.
+            </p>
+        
+            <div class="BookContact_Row">
+              <label>
+                First Name
+                <input type="text" class="StyledInput ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="view.data.firstName" placeholder="Enter name">
+        
+                <!-- ngIf: view.errors.firstName -->
+              </label>
+            </div>
+    
+            <div class="BookContact_Row">
+              <label>
+                Email
+                <input type="email" class="StyledInput ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-email" ng-model="view.data.email" placeholder="Email Address">
+    
+                <!-- ngIf: view.errors.email -->
+              </label>
+            </div>
+        
+            <div class="BookContact_Row">
+              <label>
+                Phone Number
+                <input type="tel" class="StyledInput ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="view.data.phone" placeholder="555-555-5555">
+    
+                <!-- ngIf: view.errors.phone -->
+              </label>
+              <label>
+                Who will be taking lessons?
+                <select ng-model="view.data.studentType" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+                                <option value="me" selected="selected">Me</option>
+                                <option value="child">My child</option>
+                                <option value="other">Someone else</option>
+                              </select>
+        
+                <!-- ngIf: view.errors.studentType -->
+              </label>
+            </div>
+        
+            <!-- ngIf: (view.showTimezone && !view.hasAccount) || view.data.studentType == 'child' || view.data.studentType == 'other' -->
+          </div><!-- end ngIf: !view.hasAccount -->
+    
+          <!-- ngIf: view.errors.general -->
+    <a href="home.html">
+        <button class="PillButton Blue ng-binding" onclick="next()" >
+            Book  your demo
+            <!-- ngIf: !view.loading --><span ng-if="!view.loading" class="Fontello-right-open-big ng-scope"></span><!-- end ngIf: !view.loading -->
+          </button></a>
+       
+      
+          <!-- ngIf: !view.hasAccount --><div ng-if="!view.hasAccount" class="ng-scope">
+            <div class="BookContact_Disclaimer">
+              By clicking "View Lesson Packages", you agree to
+              the TakeLessons <a target="blank" href="/terms">Terms of Use</a>          and <a target="blank" href="/privacy">Privacy Policy</a>        </div>
+      
+            <div class="BookContact_Returning">
+              Are you a returning customer? <span ng-click="view.form = 'login'">Log in</span>
+            </div>
+          </div><!-- end ngIf: !view.hasAccount -->
+        </form><!-- end ngIf: view.form != 'login' -->
+      </div>
+ <script src="demo.js"></script>
+
+</body>
+</html>
